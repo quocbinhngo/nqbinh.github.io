@@ -1,0 +1,157 @@
+/**************************/
+/* BELOW 952 */
+/**************************/
+
+/* @media (max-width: 59.5em) {
+  html {
+    font-size: 59.38%;
+  }
+} */
+
+/**************************/
+/* BELOW 900 */
+/**************************/
+
+@media (max-width: 59.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 855 */
+/**************************/
+
+@media (max-width: 53.45em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-hero {
+    padding: 3.2rem 0 6.4rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img.box,
+  .hero-social-links {
+    text-align: center;
+  }
+
+  .hero-btns {
+    margin-bottom: 4.8rem;
+  }
+
+  .hero-social-links {
+    display: inline-block;
+    display: inline-flex;
+  }
+}
+
+/**************************/
+/* BELOW 820 */
+/**************************/
+
+@media (max-width: 51.25em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .level-tag {
+    font-size: 1.8rem;
+  }
+
+  .project-feature {
+    font-size: 2rem;
+  }
+
+  .project-name,
+  .project-description-content {
+    font-size: 2.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 630 */
+/**************************/
+
+@media (max-width: 39.1em) {
+  .logo {
+    height: 9.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.4rem;
+  }
+
+  .qualification-box {
+    grid-template-columns: 1fr;
+  }
+
+  .qualification-img-box {
+    margin-bottom: 4.8rem;
+  }
+
+  .qualification-img {
+    width: 35%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
+
+/**************************/
+/* BELOW 630 */
+/**************************/
+
+@media (max-width: 33.5em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .section-about,
+  .section-qualification,
+  .section-experience,
+  .section-projects {
+    padding: 4.8rem 0;
+  }
+}
+
+/**************************/
+/* BELOW 471 */
+/**************************/
+
+@media (max-width: 29.4em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+/**************************/
+/* BELOW 400 */
+/**************************/
+
+@media (max-width: 25em) {
+  html {
+    font-size: 30%;
+  }
+}

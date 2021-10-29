@@ -1,0 +1,183 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #1c7ed6
+- Tints:
+#e8f2fb
+#60a5e2
+#338bda
+- Shades: 
+#1971c1
+#1665ab
+#0e3f6b
+#082640
+#030d15
+
+- Accents:
+- Greys
+#8B8B8B  the least acceptible in #e8f2fb background
+#555
+#333  
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  border-bottom: 8px solid #1c7ed6;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid.grid--cards {
+  align-items: stretch;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  color: #0e3f6b;
+
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+  text-align: center;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1c7ed6;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s;
+
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: #fff;
+  background-color: #1c7ed6;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #1665ab;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: #333;
+  background-color: #fff;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(28, 127, 214, 0.5);
+}
+
+/**************************/
+/* HELPER/SETTINGS CLASSES */
+/**************************/
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-left-sm {
+  margin-left: 1.6rem;
+}
+
+strong {
+  font-weight: 500;
+}
